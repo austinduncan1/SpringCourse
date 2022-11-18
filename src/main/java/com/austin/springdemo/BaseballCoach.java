@@ -1,5 +1,6 @@
 package com.austin.springdemo;
 
+
 public class BaseballCoach implements Coach {
 	
 	// define a private field for the dependency
