@@ -19,8 +19,10 @@ public class AnnotationDemoApp {
 		// setter dependency injection used for this example
 		WiffleBallCoach theWiffleBallCoach = context.getBean("wiffleBallCoach", WiffleBallCoach.class);
 		
-		// example of retrieve with no bean, and dependency injection achieved through field injection
+		// example of retrieve with no bean id, and dependency injection achieved through field injection
 		Coach theCheerCoach = context.getBean("cheerLeadingCoach", Coach.class);
+		
+		Coach theSwimCoach = context.getBean("swimCoach", Coach.class);
 				
 		// do something with beans
 		System.out.println("Wiffle Ball email: " + theWiffleBallCoach.getEmail());
@@ -32,11 +34,15 @@ public class AnnotationDemoApp {
 		
 		System.out.println("Cheerleading workout: " + theCheerCoach.getDailyWorkout());
 		
+		System.out.println("Swim Coach workout: " + theSwimCoach.getDailyWorkout());
+		
 		System.out.println("Tennis fortune: " + theTennisCoach.getDailyFortune());
 		
 		System.out.println("Wiffle Ball fortune: " + theWiffleBallCoach.getDailyFortune());
 		
 		System.out.println("Cheerleading fortune: " + theCheerCoach.getDailyFortune());
+		
+		System.out.println("Swim Coach fortune: " + theSwimCoach.getDailyFortune());
 		
 		// close container
 		context.close();
