@@ -33,6 +33,15 @@
     	 <!-- setup constructor injection -->
     	<constructor-arg ref="myRandomFortuneService" />
    	</bean>
+   	
+   	<bean id="myGolfCoach"
+   	class="com.austin.springdemo.GolfCoach"
+   	scope="prototype"
+   	init-method="initGolfCoach"
+   	destroy-method="destroyGolfCoach">
+   	<!-- destroy method will not be called since prototype! -->
+   	<constructor-arg ref="myRandomFortuneService"></constructor-arg>
+   	</bean>
 
    	
 </beans>
