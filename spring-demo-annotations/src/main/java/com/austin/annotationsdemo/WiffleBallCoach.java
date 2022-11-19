@@ -1,6 +1,7 @@
 package com.austin.annotationsdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import com.austin.annotationsdemo.services.FortuneService;
@@ -26,7 +27,7 @@ public class WiffleBallCoach implements Coach {
 	 * @implNote for dependency injection, if using Autowired, do not need to use setter, could be ANY method name
 	 * */
 	@Autowired
-	public void setFortuneService(FortuneService fortuneService)
+	public void setFortuneService(@Qualifier("databaseFortuneService") FortuneService fortuneService)
 	{
 		this.fortuneService = fortuneService;
 	}
