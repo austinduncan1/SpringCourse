@@ -2,6 +2,7 @@ package com.austin.annotationsdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.austin.annotationsdemo.services.FortuneService;
@@ -11,6 +12,12 @@ import com.austin.annotationsdemo.services.FortuneService;
 public class WiffleBallCoach implements Coach {
 	
 	private FortuneService fortuneService;
+	
+	@Value("${foo.email}")
+	private String email;
+	
+	@Value("${foo.team}")
+	private String team;
 	
 	@Override
 	public String getDailyFortune()
@@ -23,11 +30,22 @@ public class WiffleBallCoach implements Coach {
 		return "Practice handling a light weight wiffle ball";
 	}
 	
+	public String getEmail()
+	{
+		return email;
+	}
+	
+	public String getTeam()
+	{
+		return team;
+	}
+	
 	/**
 	 * @implNote for dependency injection, if using Autowired, do not need to use setter, could be ANY method name
 	 * */
 	@Autowired
-	public void setFortuneService(@Qualifier("databaseFortuneService") FortuneService fortuneService)
+	@Qualifier("databaseFortuneService") 
+	public void setFortuneService(FortuneService fortuneService)
 	{
 		this.fortuneService = fortuneService;
 	}

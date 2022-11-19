@@ -3,11 +3,12 @@ package com.austin.annotationsdemo.runners;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.austin.annotationsdemo.Coach;
+import com.austin.annotationsdemo.WiffleBallCoach;
 
 public class AnnotationDemoApp {
 
 	public static void main(String[] args) {
-		// load Spring config?
+		// load Spring config
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// retrieve bean using bean-id
@@ -16,12 +17,15 @@ public class AnnotationDemoApp {
 		
 		// example of retrieving bean with no specific bean-id set in class annotation (simply camel case of class name)
 		// setter dependency injection used for this example
-		Coach theWiffleBallCoach = context.getBean("wiffleBallCoach", Coach.class);
+		WiffleBallCoach theWiffleBallCoach = context.getBean("wiffleBallCoach", WiffleBallCoach.class);
 		
 		// example of retrieve with no bean, and dependency injection achieved through field injection
 		Coach theCheerCoach = context.getBean("cheerLeadingCoach", Coach.class);
 				
 		// do something with beans
+		System.out.println("Wiffle Ball email: " + theWiffleBallCoach.getEmail());
+		System.out.println("Wiffle Ball team: " + theWiffleBallCoach.getTeam());
+		
 		System.out.println("Tennis workout: " + theTennisCoach.getDailyWorkout());
 		
 		System.out.println("Wiffle Ball workout: " + theWiffleBallCoach.getDailyWorkout());
