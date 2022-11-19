@@ -9,12 +9,7 @@
 
     <!-- Define your beans here -->
     
-    <bean id="myLoggerConfig"
-	class="com.austin.springdemo.runners.MyLoggerConfig"
-	init-method="initLogger">
-		<property name="rootLoggerLevel" value="FINE"></property>
-		<property name="printedLoggerLevel" value="FINE"></property>
-	</bean>
+    
     
     <!-- define dependency -->
     <bean id="myFortuneService"
