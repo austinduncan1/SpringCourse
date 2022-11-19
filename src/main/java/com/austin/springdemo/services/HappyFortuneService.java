@@ -1,4 +1,4 @@
-package com.austin.springdemo;
+package com.austin.springdemo.services;
 
 public class HappyFortuneService implements FortuneService {
 

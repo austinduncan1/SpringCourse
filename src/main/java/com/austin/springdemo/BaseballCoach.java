@@ -1,5 +1,6 @@
 package com.austin.springdemo;
 
+import com.austin.springdemo.services.FortuneService;
 
 public class BaseballCoach implements Coach {
 	
@@ -7,7 +8,7 @@ public class BaseballCoach implements Coach {
 	private FortuneService fortuneService;
 	
 	// define constructor for dependency injection
-	public BaseballCoach(FortuneService fortuneService)
+	BaseballCoach(FortuneService fortuneService)
 	{
 		this.fortuneService = fortuneService;
 	}

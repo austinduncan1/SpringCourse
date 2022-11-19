@@ -1,10 +1,12 @@
 package com.austin.springdemo;
 
+import com.austin.springdemo.services.FortuneService;
+
 public class GolfCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	
-	public GolfCoach(FortuneService fortuneService)
+	GolfCoach(FortuneService fortuneService)
 	{
 		this.fortuneService = fortuneService;
 	}

@@ -1,10 +1,10 @@
-package com.austin.springdemo;
+package com.austin.springdemo.services;
 
 import java.util.Random;
 
 public class RandomFortuneService implements FortuneService {
 	
-	String[] fortunes = new String[] {"Fortune1", "Fortune2", "Fortune3"};
+	private String[] fortunes = new String[] {"Fortune1", "Fortune2", "Fortune3"};
 	
 	@Override
 	public String getFortune() {

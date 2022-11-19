@@ -1,6 +1,9 @@
-package com.austin.springdemo;
+package com.austin.springdemo.runners;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.austin.springdemo.Coach;
+import com.austin.springdemo.GolfCoach;
 
 
 /**
@@ -8,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * 
  * We can now easily change to different sport coach
  * */
-public class HelloSpringApp {
+class HelloSpringApp {
 
 	public static void main(String[] args) {
 		

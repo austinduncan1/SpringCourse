@@ -1,12 +1,14 @@
 package com.austin.springdemo;
 
+import com.austin.springdemo.services.FortuneService;
+
 public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
 	private String emailAddress;
 	private String team;
 	
-	public CricketCoach() {}
+	CricketCoach() {}
 	
 	public void setFortuneService(FortuneService fortuneService)
 	{

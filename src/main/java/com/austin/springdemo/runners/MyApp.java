@@ -1,6 +1,9 @@
-package com.austin.springdemo;
+package com.austin.springdemo.runners;
 
-public class MyApp {
+import com.austin.springdemo.Coach;
+import com.austin.springdemo.TrackCoach;
+
+class MyApp {
 	
 	public static void main(String[] args) {
 		

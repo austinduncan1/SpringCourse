@@ -1,9 +1,11 @@
 package com.austin.springdemo;
 
+import com.austin.springdemo.services.FortuneService;
+
 public class FootballCoach implements Coach {
 	private FortuneService fortuneService;
 	
-	public FootballCoach(FortuneService fortuneService) {
+	FootballCoach(FortuneService fortuneService) {
 		super();
 		this.fortuneService = fortuneService;
 	}

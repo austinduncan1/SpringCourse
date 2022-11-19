@@ -1,5 +1,7 @@
 package com.austin.springdemo;
 
+import com.austin.springdemo.services.FortuneService;
+
 public class TrackCoach implements Coach {
 	private FortuneService fortuneService;
 	

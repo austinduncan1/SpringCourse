@@ -1,8 +1,10 @@
-package com.austin.springdemo;
+package com.austin.springdemo.runners;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class SetterDemoApp {
+import com.austin.springdemo.CricketCoach;
+
+class SetterDemoApp {
 
 	public static void main(String[] args) {
 		

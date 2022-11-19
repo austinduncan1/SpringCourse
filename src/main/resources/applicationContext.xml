@@ -15,11 +15,11 @@
     
     <!-- define dependency -->
     <bean id="myFortuneService"
-    	class="com.austin.springdemo.HappyFortuneService">
+    	class="com.austin.springdemo.services.HappyFortuneService">
     </bean>
     
     <bean id="myRandomFortuneService"
-    	class="com.austin.springdemo.RandomFortuneService">
+    	class="com.austin.springdemo.services.RandomFortuneService">
     </bean>
     
     <bean id="myCricketCoach"
