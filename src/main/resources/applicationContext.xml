@@ -10,6 +10,13 @@
 
 	<!-- load propertioes file -->
 	<context:property-placeholder location="classpath:sport.properties"/>
+	
+	<bean id="myLoggerConfig"
+	class="com.austin.springdemo.runners.MyLoggerConfig"
+	init-method="initLogger">
+		<property name="rootLoggerLevel" value="FINE"></property>
+		<property name="printedLoggerLevel" value="FINE"></property>
+	</bean>
 
     <!-- Define your beans here -->
     
