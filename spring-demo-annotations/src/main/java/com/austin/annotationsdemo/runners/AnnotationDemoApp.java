@@ -17,15 +17,22 @@ public class AnnotationDemoApp {
 		// example of retrieving bean with no specific bean-id set in class annotation (simply camel case of class name)
 		// setter dependency injection used for this example
 		Coach theWiffleBallCoach = context.getBean("wiffleBallCoach", Coach.class);
+		
+		// example of retrieve with no bean, and dependency injection achieved through field injection
+		Coach theCheerCoach = context.getBean("cheerLeadingCoach", Coach.class);
 				
 		// do something with beans
 		System.out.println("Tennis workout: " + theTennisCoach.getDailyWorkout());
 		
 		System.out.println("Wiffle Ball workout: " + theWiffleBallCoach.getDailyWorkout());
 		
+		System.out.println("Cheerleading workout: " + theCheerCoach.getDailyWorkout());
+		
 		System.out.println("Tennis fortune: " + theTennisCoach.getDailyFortune());
 		
 		System.out.println("Wiffle Ball fortune: " + theWiffleBallCoach.getDailyFortune());
+		
+		System.out.println("Cheerleading fortune: " + theCheerCoach.getDailyFortune());
 		
 		// close container
 		context.close();
