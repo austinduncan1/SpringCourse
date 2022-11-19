@@ -1,0 +1,3 @@
+rootProject.name = 'spring-course-demos'
+include 'spring-demo-annotations'
+include 'xml-demo'  

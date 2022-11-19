@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	implementation 'org.springframework:spring:5.3.24'
+	implementation 'org.springframework:spring-context:6.0.0'
+}
