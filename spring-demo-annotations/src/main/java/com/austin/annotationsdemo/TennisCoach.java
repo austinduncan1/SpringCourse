@@ -8,7 +8,7 @@ import com.austin.annotationsdemo.Coach;
 import com.austin.annotationsdemo.services.FortuneService;
 
 @Component("theTennisCoach")
-public class TennisCoach implements Coach {
+class TennisCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	

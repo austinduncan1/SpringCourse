@@ -1,4 +1,9 @@
 apply plugin: 'java'
+apply plugin: 'application'
+
+application {
+	mainClass="com.austin.annotationsdemo.runners.AnnotationDemoApp"
+}
 
 repositories {
 	mavenCentral()

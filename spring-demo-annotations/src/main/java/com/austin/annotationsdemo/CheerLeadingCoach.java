@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import com.austin.annotationsdemo.services.FortuneService;
 
 @Component
-public class CheerLeadingCoach implements Coach {
+class CheerLeadingCoach implements Coach {
 
 	// field injection of dependencies
 	@Autowired

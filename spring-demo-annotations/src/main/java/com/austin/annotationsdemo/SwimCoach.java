@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import com.austin.annotationsdemo.services.FortuneService;
 
 @Component
-public class SwimCoach implements Coach {
+class SwimCoach implements Coach {
 	
 	@Autowired
 	@Qualifier("fileFortuneService")

@@ -3,12 +3,14 @@ package com.austin.annotationsdemo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.austin.annotationsdemo.services.FortuneService;
 
 // example of a component without a bean-id
 @Component
+@Scope("singleton")
 public class WiffleBallCoach implements Coach {
 	
 	private FortuneService fortuneService;

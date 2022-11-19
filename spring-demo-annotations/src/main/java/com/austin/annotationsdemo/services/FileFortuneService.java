@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FileFortuneService implements FortuneService {
+class FileFortuneService implements FortuneService {
 	
 	@Value("${foo.fortunes}")
 	private String[] fortunesFromFile;

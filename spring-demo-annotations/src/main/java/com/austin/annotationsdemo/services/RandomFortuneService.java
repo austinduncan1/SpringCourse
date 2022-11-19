@@ -5,7 +5,7 @@ import java.util.Random;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RandomFortuneService implements FortuneService {
+class RandomFortuneService implements FortuneService {
 
 	private String[] fortunes = new String[] {"You will have a successful day.", "You will meet someone who needs you as much as you need them.", "Beware of the wolf in sheep's clothing"};
 	private Random randomGen = new Random();
