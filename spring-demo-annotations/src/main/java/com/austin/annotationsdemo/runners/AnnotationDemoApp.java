@@ -44,6 +44,8 @@ public class AnnotationDemoApp {
 		
 		System.out.println("Swim Coach fortune: " + theSwimCoach.getDailyFortune());
 		
+		System.out.println("Closing container...");
+		
 		// close container
 		context.close();
 	}
