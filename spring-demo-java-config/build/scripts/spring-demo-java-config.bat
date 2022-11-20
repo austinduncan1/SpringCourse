@@ -14,7 +14,7 @@
 @rem limitations under the License.
 @rem
 
-@if "%DEBUG%"=="" @echo off
+@if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
 @rem  spring-demo-java-config startup script for Windows
@@ -25,7 +25,7 @@
 if "%OS%"=="Windows_NT" setlocal
 
 set DIRNAME=%~dp0
-if "%DIRNAME%"=="" set DIRNAME=.
+if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
@@ -40,7 +40,7 @@ if defined JAVA_HOME goto findJavaFromJavaHome
 
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
-if %ERRORLEVEL% equ 0 goto execute
+if "%ERRORLEVEL%" == "0" goto execute
 
 echo.
 echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
@@ -71,19 +71,17 @@ set CLASSPATH=%APP_HOME%\lib\spring-demo-java-config.jar;%APP_HOME%\lib\spring-c
 
 
 @rem Execute spring-demo-java-config
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SPRING_DEMO_JAVA_CONFIG_OPTS%  -classpath "%CLASSPATH%" com.austin.springdemo.runners.SpringDemoApp %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SPRING_DEMO_JAVA_CONFIG_OPTS%  -classpath "%CLASSPATH%" com.austin.javademo.runners.JavaConfigDemoRunner %*
 
 :end
 @rem End local scope for the variables with windows NT shell
-if %ERRORLEVEL% equ 0 goto mainEnd
+if "%ERRORLEVEL%"=="0" goto mainEnd
 
 :fail
 rem Set variable SPRING_DEMO_JAVA_CONFIG_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-set EXIT_CODE=%ERRORLEVEL%
-if %EXIT_CODE% equ 0 set EXIT_CODE=1
-if not ""=="%SPRING_DEMO_JAVA_CONFIG_EXIT_CONSOLE%" exit %EXIT_CODE%
-exit /b %EXIT_CODE%
+if  not "" == "%SPRING_DEMO_JAVA_CONFIG_EXIT_CONSOLE%" exit 1
+exit /b 1
 
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal
