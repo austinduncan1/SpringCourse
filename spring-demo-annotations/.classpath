@@ -19,6 +19,11 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/Users/austinduncan/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/65dfd2c47380bf72ec62a5b8c4ceb78a4eda1a53/javax.annotation-api-1.3.2-sources.jar" kind="lib" path="/Users/austinduncan/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/Users/austinduncan/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/6.0.0/1bac8a90b405d2cee718525a1eaf5828ef3862c1/spring-aop-6.0.0-sources.jar" kind="lib" path="/Users/austinduncan/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/6.0.0/d7a33ecc6f7b77b22a0bdb11f336ca8d23412fb3/spring-aop-6.0.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
