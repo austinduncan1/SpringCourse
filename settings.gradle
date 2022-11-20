@@ -1,4 +1,5 @@
 rootProject.name = 'spring-course-demos'
 include 'spring-demo-annotations'
 include 'xml-demo'
-include 'spring-demo-java-config' 
+include 'spring-demo-java-config'
+include 'spring-mvc-demo-one' 

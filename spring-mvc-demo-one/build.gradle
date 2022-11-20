@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+application {
+	mainClass = 'com.austin.javademo.runners.JavaConfigDemoRunner'
+}
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	implementation 'org.springframework:spring:5.3.24'
+	implementation 'org.springframework:spring-context:6.0.0'
+	// https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+	implementation 'org.springframework:spring-webmvc:5.3.24'
+}
